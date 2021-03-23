@@ -1,0 +1,146 @@
+{
+  "books": [
+    {
+      "classrooms": [
+        "Seconde Générale ESABAC",
+        "Seconde Générale BACHIBAC",
+        "Seconde Générale"
+      ],
+      "_id": "5ecd06d396802b2b4ca4ad21",
+      "category": "mandatory",
+      "lv1": "",
+      "lv2": "",
+      "speciality": "",
+      "option": "",
+      "isRenting": true,
+      "stock": 259,
+      "title": "Français : Weblettres le Robert. Collection Passeurs de textes",
+      "subject": "Français",
+      "isbn": "9782321014058",
+      "id": "50b7548c-f640-44eb-b5af-3bcb2f894c44",
+      "__v": 0,
+      "delivered": false
+    },
+    {
+      "classrooms": [
+        "Seconde Générale"
+      ],
+      "_id": "5ecd072e96802b2b4ca4ad22",
+      "category": "mandatory",
+      "lv1": "",
+      "lv2": "",
+      "speciality": "",
+      "option": "",
+      "isRenting": true,
+      "stock": 259,
+      "title": "Histoire : Manuel Nathan (Collection Guillaume Le Quintrec",
+      "subject": "Histoire",
+      "isbn": "9782091728278",
+      "id": "c870c132-9edb-4364-b9c6-df4d02b5ab0e",
+      "__v": 0,
+      "delivered": false
+    },
+    {
+      "classrooms": [
+        "Seconde Générale"
+      ],
+      "_id": "5ecd076a96802b2b4ca4ad23",
+      "category": "mandatory",
+      "lv1": "",
+      "lv2": "",
+      "speciality": "",
+      "option": "",
+      "isRenting": true,
+      "stock": 259,
+      "title": "Géographie : Manuel Hachette Education",
+      "subject": "Géographie",
+      "isbn": "9782013954211",
+      "id": "81f11611-8cbd-47b1-8809-fb847db3e4e2",
+      "__v": 0,
+      "delivered": false
+    },
+    {
+      "classrooms": [
+        "Seconde Générale ESABAC",
+        "Seconde Générale BACHIBAC",
+        "Seconde Générale"
+      ],
+      "_id": "5ecd07b096802b2b4ca4ad24",
+      "category": "mandatory",
+      "lv1": "",
+      "lv2": "",
+      "speciality": "",
+      "option": "",
+      "isRenting": true,
+      "stock": 259,
+      "title": "Mathématiques : Variations 2° Editions HATIER",
+      "subject": "Mathématiques",
+      "isbn": "9782401044135",
+      "id": "723411e2-d0b7-4de5-9505-f907e8e2eb2c",
+      "__v": 0,
+      "delivered": false
+    },
+    {
+      "classrooms": [
+        "Seconde Générale ESABAC",
+        "Seconde Générale BACHIBAC",
+        "Seconde Générale"
+      ],
+      "_id": "5ecd07e896802b2b4ca4ad25",
+      "category": "mandatory",
+      "lv1": "",
+      "lv2": "",
+      "speciality": "",
+      "option": "",
+      "isRenting": true,
+      "stock": 259,
+      "title": "Physique/Chimie : Hachette collection Bellier - Calafell- Lescure",
+      "subject": "Physique-Chimie",
+      "isbn": "9782013954723",
+      "id": "77cfbe8e-4ee4-4bd8-a1aa-df3dcb6c3128",
+      "__v": 0,
+      "delivered": true
+    },
+    {
+      "classrooms": [
+        "Seconde Générale ESABAC",
+        "Seconde Générale BACHIBAC",
+        "Seconde Générale"
+      ],
+      "_id": "5ecd095596802b2b4ca4ad29",
+      "category": "mandatory",
+      "lv1": "",
+      "lv2": "",
+      "speciality": "",
+      "option": "",
+      "isRenting": true,
+      "stock": 259,
+      "title": "SNT : Sciences Numériques et Technologiques 2° Editions HACHETTE",
+      "subject": "Sciences numériques et technologique",
+      "isbn": "9782017866053",
+      "id": "8f6ff67c-777a-424b-951a-9b2187a28816",
+      "__v": 0,
+      "delivered": false
+    },
+    {
+      "classrooms": [
+        "Seconde Générale ESABAC",
+        "Seconde Générale BACHIBAC",
+        "Seconde Générale"
+      ],
+      "_id": "5edc147aebeff6064de1c026",
+      "category": "mandatory",
+      "lv1": "",
+      "lv2": "",
+      "speciality": "",
+      "option": "",
+      "isRenting": true,
+      "stock": 0,
+      "title": "fdsf",
+      "subject": "fdsfsdf",
+      "id": "bb87b6dc-cde3-4d82-aaf0-db605c84952f",
+      "__v": 0,
+      "delivered": false
+    }
+  ]
+}

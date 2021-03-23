@@ -1,0 +1,3 @@
+<div *ngFor="let item of books">
+    <li>{{ item.title }} - {{ item.stock | stk }} <span appAction (click)="delete(item)">supprimer</span></li>
+</div>
