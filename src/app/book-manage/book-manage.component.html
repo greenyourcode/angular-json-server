@@ -1,5 +1,21 @@
 <div *ngFor="let item of books">
-    <li>{{ item.title }} - {{ item.stock | stk }} <span appAction (click)="delete(item)">supprimer</span></li>
+    <li>{{ item.title }} - {{ item.stock | stk }} 
+    <span appAction (click)="delete(item)">supprimer</span>
+    <span appAction (click)="update(item)">modifier</span>
+</li>
 </div>
 
-<app-book-edit (formChange)="getFormOnChange($event)"></app-book-edit>
+<br />
+<button (click)="createEditionModeHandle()">Mode de création</button>
+<ng-container *ngIf="editionMode === EditionMode.Create; else updateMode">
+    <app-book-edit (formChange)="getFormOnChange($event)">
+        <h2>Création d'un livre</h2>
+    </app-book-edit>
+</ng-container>
+<ng-template #updateMode>
+    <app-book-edit [book]="bookUpdating" (formChange)="getFormOnChange($event)">
+        <h2>Mise à jour d'un livre</h2>
+    </app-book-edit>
+</ng-template>
+
+

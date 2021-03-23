@@ -23,4 +23,8 @@ export class BookService {
   addBook(newBook: any) {
     return this.http.post(`http://localhost:3000/books/`, newBook);
   }
+
+  updateBook(book: any) {
+    return this.http.put(`http://localhost:3000/books/`, book);
+  }
 }

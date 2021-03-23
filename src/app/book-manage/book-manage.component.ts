@@ -1,3 +1,4 @@
+import { EditionMode } from './book.enum';
 import { BookService } from './book.service';
 import { Component, OnInit } from '@angular/core';
 import { switchMap } from 'rxjs/operators';
@@ -10,13 +11,18 @@ import { v4 as uuidv4 } from 'uuid';
 })
 export class BookManageComponent implements OnInit {
   books: [];
-  title: string;
-  stock: number;
+  bookUpdating: any;
+  editionMode: EditionMode = EditionMode.Create;
+  EditionMode = EditionMode;
 
   constructor(private bookService: BookService) { }
 
   ngOnInit(): void {
     this.refreshBook();
+  }
+
+  createEditionModeHandle() {
+    this.editionMode = EditionMode.Create;
   }
 
   refreshBook() {
@@ -26,7 +32,7 @@ export class BookManageComponent implements OnInit {
   }
 
   getFormOnChange(book: any) {
-    this.addBook(book);
+    this.editBook(book);
   }
 
   // async delete(book: any) {
@@ -36,21 +42,35 @@ export class BookManageComponent implements OnInit {
   //   }
   // }
 
-  addBook(book: any) {
-    const newBook = {
-      id: uuidv4(),
-      title: book.title,
-      stock: book.stock
-    };
-    this.bookService.addBook(newBook).pipe(
-      switchMap(_ => this.bookService.getBookList()),
-    ).subscribe(res => this.books = res);
+  editBook(book: any) {
+    if (this.editionMode === EditionMode.Create) {
+      const newBook = {
+        id: uuidv4(),
+        title: book.title,
+        stock: book.stock
+      };
+      this.bookService.addBook(newBook).pipe(
+        switchMap(_ => this.bookService.getBookList()),
+      ).subscribe(res => this.books = res);
+    } else if (this.editionMode === EditionMode.Update) {
+      this.bookService.updateBook(book).pipe(
+        switchMap(_ => this.bookService.getBookList()),
+      ).subscribe(res => this.books = res);
+    }
   }
 
   delete(book: any) {
     this.bookService.deleteBookById(book.id).pipe(
       switchMap(_ => this.bookService.getBookList()),
     ).subscribe(res => this.books = res);
+  }
+
+  update(book: any) {
+    this.editionMode = EditionMode.Update;
+    this.bookUpdating = book;
+    // this.bookService.updateBook(book).pipe(
+    //   switchMap(_ => this.bookService.getBookList()),
+    // ).subscribe(res => this.books = res);
   }
 
 }
