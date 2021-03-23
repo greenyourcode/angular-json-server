@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 import { BookManageComponent } from './book-manage/book-manage.component';
 import { ActionDirective } from './action.directive';
 import { StkPipe } from './stk.pipe';
+import { BookEditComponent } from './book-manage/book-edit.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     BookManageComponent,
     ActionDirective,
-    StkPipe
+    StkPipe,
+    BookEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
