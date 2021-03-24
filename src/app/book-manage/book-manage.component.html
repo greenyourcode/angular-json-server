@@ -1,7 +1,7 @@
 <div *ngFor="let item of books">
     <li>{{ item.title }} - {{ item.stock | stk }} 
-    <span appAction (click)="delete(item)">supprimer</span>
-    <span appAction (click)="update(item)">modifier</span>
+    <span appAction="red" (click)="delete(item)">supprimer</span>
+    <span appAction="yellow" (click)="update(item)">modifier</span>
 </li>
 </div>
 
@@ -14,7 +14,7 @@
 </ng-container>
 <ng-template #updateMode>
     <app-book-edit [book]="bookUpdating" (formChange)="getFormOnChange($event)">
-        <h2>Mise à jour d'un livre</h2>
+        <h2>Mise à jour du livre {{ bookUpdating.id }}</h2>
     </app-book-edit>
 </ng-template>
 

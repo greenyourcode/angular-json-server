@@ -25,25 +25,6 @@
       "classrooms": [
         "Seconde Générale"
       ],
-      "_id": "5ecd072e96802b2b4ca4ad22",
-      "category": "mandatory",
-      "lv1": "",
-      "lv2": "",
-      "speciality": "",
-      "option": "",
-      "isRenting": true,
-      "stock": 259,
-      "title": "Histoire : Manuel Nathan (Collection Guillaume Le Quintrec",
-      "subject": "Histoire",
-      "isbn": "9782091728278",
-      "id": "c870c132-9edb-4364-b9c6-df4d02b5ab0e",
-      "__v": 0,
-      "delivered": false
-    },
-    {
-      "classrooms": [
-        "Seconde Générale"
-      ],
       "_id": "5ecd076a96802b2b4ca4ad23",
       "category": "mandatory",
       "lv1": "",
@@ -122,16 +103,6 @@
       "delivered": false
     },
     {
-      "id": "aba783f9-494f-4625-b2c1-78cde4e088d6",
-      "title": "fsd",
-      "stock": "32"
-    },
-    {
-      "id": "f56dfed2-9726-40da-8905-26878273c34a",
-      "title": "fsd",
-      "stock": "33"
-    },
-    {
       "id": "ff61eba9-f9a3-472f-9c49-c66e15a411ad",
       "title": "fsdds",
       "stock": "33"
@@ -145,11 +116,6 @@
       "id": "392fdb8e-d1a1-4995-9356-104ab2087ec4",
       "title": "fsd",
       "stock": 0
-    },
-    {
-      "id": "ffcdaa74-d64f-43f3-ba60-2471395855d3",
-      "title": "EAZEAZE",
-      "stock": "232"
     },
     {
       "id": "f125d867-0b8c-402c-a2cd-97eb81fc5e03",
@@ -180,13 +146,6 @@
       "id": "4a408f82-88b1-4911-9c3a-53afd201be66",
       "title": "dfsdf",
       "stock": "22"
-    },
-    {
-      "book": {
-        "title": "",
-        "stock": "3222"
-      },
-      "id": "YF3BvC0"
     }
   ]
 }
