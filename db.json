@@ -25,6 +25,25 @@
       "classrooms": [
         "Seconde Générale"
       ],
+      "_id": "5ecd072e96802b2b4ca4ad22",
+      "category": "mandatory",
+      "lv1": "",
+      "lv2": "",
+      "speciality": "",
+      "option": "",
+      "isRenting": true,
+      "stock": 259,
+      "title": "Histoire : Manuel Nathan (Collection Guillaume Le Quintrec",
+      "subject": "Histoire",
+      "isbn": "9782091728278",
+      "id": "c870c132-9edb-4364-b9c6-df4d02b5ab0e",
+      "__v": 0,
+      "delivered": false
+    },
+    {
+      "classrooms": [
+        "Seconde Générale"
+      ],
       "_id": "5ecd076a96802b2b4ca4ad23",
       "category": "mandatory",
       "lv1": "",
@@ -41,25 +60,19 @@
       "delivered": false
     },
     {
-      "classrooms": [
-        "Seconde Générale ESABAC",
-        "Seconde Générale BACHIBAC",
-        "Seconde Générale"
-      ],
-      "_id": "5ecd07b096802b2b4ca4ad24",
-      "category": "mandatory",
-      "lv1": "",
-      "lv2": "",
-      "speciality": "",
-      "option": "",
-      "isRenting": true,
-      "stock": 259,
       "title": "Mathématiques : Variations 2° Editions HATIER",
-      "subject": "Mathématiques",
-      "isbn": "9782401044135",
-      "id": "723411e2-d0b7-4de5-9505-f907e8e2eb2c",
-      "__v": 0,
-      "delivered": false
+      "stock": "25922",
+      "id": "723411e2-d0b7-4de5-9505-f907e8e2eb2c"
+    },
+    {
+      "title": "Chimie : Hachette collection Bellier - Calafell- Lescure",
+      "stock": 0,
+      "id": "77cfbe8e-4ee4-4bd8-a1aa-df3dcb6c3128"
+    },
+    {
+      "title": "SVT 2de : nouveau programme. EDITION BELIN",
+      "stock": "22",
+      "id": "2e8fc74b-1bcf-48ed-a601-add6e96c7b82"
     },
     {
       "classrooms": [
@@ -88,6 +101,27 @@
         "Seconde Générale BACHIBAC",
         "Seconde Générale"
       ],
+      "_id": "5ecd099096802b2b4ca4ad2a",
+      "category": "mandatory",
+      "lv1": "",
+      "lv2": "",
+      "speciality": "",
+      "option": "",
+      "isRenting": true,
+      "stock": 259,
+      "title": "SES : Editions Hachette éducation programme 2019",
+      "subject": "SES",
+      "isbn": "9782013954235",
+      "id": "e839435f-3ec7-4ed4-b4dd-1eb9544068fe",
+      "__v": 0,
+      "delivered": false
+    },
+    {
+      "classrooms": [
+        "Seconde Générale ESABAC",
+        "Seconde Générale BACHIBAC",
+        "Seconde Générale"
+      ],
       "_id": "5edc147aebeff6064de1c026",
       "category": "mandatory",
       "lv1": "",
@@ -103,49 +137,19 @@
       "delivered": false
     },
     {
-      "id": "ff61eba9-f9a3-472f-9c49-c66e15a411ad",
-      "title": "fsdds",
-      "stock": "33"
+      "title": "ddd : Lánzate 2des, Editions Nathan",
+      "stock": "2002111",
+      "id": "27bf160e-52a5-483b-8b84-466cfdfa9a2e"
     },
     {
-      "id": "02d7bd8a-9aa6-4dfd-af83-b0518e476d04",
-      "title": "fsd",
-      "stock": "22"
+      "id": "e4f25c07-b077-40f3-8e8e-932bfe6be722",
+      "title": "dsqdqsd",
+      "stock": "32"
     },
     {
-      "id": "392fdb8e-d1a1-4995-9356-104ab2087ec4",
-      "title": "fsd",
-      "stock": 0
-    },
-    {
-      "id": "f125d867-0b8c-402c-a2cd-97eb81fc5e03",
-      "title": "fsd",
-      "stock": "02"
-    },
-    {
-      "id": "813d96bd-1871-4e34-bf45-3e2c912c80fe",
-      "title": "",
-      "stock": 0
-    },
-    {
-      "id": "4141e745-dbfd-4bed-94f6-ae00c16fdeee",
-      "title": "fd",
-      "stock": 0
-    },
-    {
-      "id": "ada18ec6-22d9-4ebe-ad22-f0708226098f",
-      "title": "dfsdf",
-      "stock": 0
-    },
-    {
-      "id": "e3aed46b-0d00-4019-a9b3-5458ca9be1cd",
-      "title": "dsqsd",
-      "stock": 0
-    },
-    {
-      "id": "4a408f82-88b1-4911-9c3a-53afd201be66",
-      "title": "dfsdf",
-      "stock": "22"
+      "id": "b5ffabf0-6139-4a90-9c29-53f3f9967747",
+      "title": "dsd",
+      "stock": "323"
     }
   ]
 }

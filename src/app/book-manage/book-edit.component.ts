@@ -1,11 +1,10 @@
-import { EditionMode } from './book.enum';
-import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-book-edit',
   templateUrl: './book-edit.component.html',
-  styleUrls: ['./book-edit.component.scss']
+  styleUrls: ['./book-edit.component.scss'],
 })
 export class BookEditComponent implements OnInit, OnChanges {
   @Input() book: any;
@@ -14,7 +13,14 @@ export class BookEditComponent implements OnInit, OnChanges {
   form: FormGroup;
 
   constructor() { }
+
   ngOnChanges(changes: SimpleChanges): void {
+    if (changes.book?.previousValue === undefined) {
+      this.form = new FormGroup({
+        title: new FormControl(changes.book.currentValue.title),
+        stock: new FormControl(changes.book.currentValue.stock)
+      });
+    }
     if (changes.book?.currentValue?.title !== changes.book?.previousValue?.title) {
       this.form?.patchValue({
         title: changes.book.currentValue.title
@@ -28,14 +34,20 @@ export class BookEditComponent implements OnInit, OnChanges {
   }
 
   ngOnInit(): void {
-    this.form = new FormGroup({
-      title: new FormControl(''),
-      stock: new FormControl(0)
-    })
+    if (this.form === undefined) { // useful coz' tranclusion of app-book-edit in updateMode (createMode -> updateMode)
+      this.form = new FormGroup({
+        title: new FormControl(''),
+        stock: new FormControl('')
+      })
+    }
+  }
+
+  setValue() {
+    this.form.setValue({ title: 'Toto', stock: 22 });
   }
 
   addBook() {
-    this.formChange.emit({ book: {title: this.form.value.title, stock: this.form.value.stock }});
+    this.formChange.emit({ book: { title: this.form.value.title, stock: this.form.value.stock } });
     this.form.reset();
   }
 }

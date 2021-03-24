@@ -31,29 +31,22 @@ export class BookManageComponent implements OnInit {
     });
   }
 
-  getFormOnChange(book: any) {
-    this.editBook(book);
+  getFormOnChange(data: any, idModified: string) {
+    this.editBook(data?.book, idModified);
   }
 
-  // async delete(book: any) {
-  //   const res = await this.bookService.deleteBookById(book.id).toPromise();
-  //   if (res) {
-  //     this.refreshBook();
-  //   }
-  // }
-
-  editBook(book: any) {
+  editBook(book: any, idModified: string) {
     if (this.editionMode === EditionMode.Create) {
       const newBook = {
         id: uuidv4(),
         title: book.title,
-        stock: book.stock
+        stock: book.stock,
       };
       this.bookService.addBook(newBook).pipe(
         switchMap(_ => this.bookService.getBookList()),
       ).subscribe(res => this.books = res);
     } else if (this.editionMode === EditionMode.Update) {
-      this.bookService.updateBook(book).pipe(
+      this.bookService.updateBook(book, idModified).pipe(
         switchMap(_ => this.bookService.getBookList()),
       ).subscribe(res => this.books = res);
     }
@@ -65,12 +58,15 @@ export class BookManageComponent implements OnInit {
     ).subscribe(res => this.books = res);
   }
 
+  // async delete(book: any) {
+  //   const res = await this.bookService.deleteBookById(book.id).toPromise();
+  //   if (res) {
+  //     this.refreshBook();
+  //   }
+  // }
+
   update(book: any) {
     this.editionMode = EditionMode.Update;
     this.bookUpdating = book;
-    // this.bookService.updateBook(book).pipe(
-    //   switchMap(_ => this.bookService.getBookList()),
-    // ).subscribe(res => this.books = res);
   }
-
 }
