@@ -1,3 +1,6 @@
-<p>order-manage works!</p>
 <div>Main interval: {{interval}}</div>
 <button (click)="start()">Start</button>
+<div [@openClose]="isOpen ? 'open' : 'closed'">
+    <p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+    <p>order-manage works!</p>
+</div>
